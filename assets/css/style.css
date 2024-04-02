@@ -1,0 +1,485 @@
+/*
+  The Name:Cravings Cafe HTML Tplate
+  Author: 
+  Support: 
+  Description: Creative  HTML5 tplate.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1.default css
+1.header section css
+3.banner section css
+3.service section css
+4.market section  css
+5.about us section css
+-----------------------------------
+*/
+
+body{
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "aktiv-grotesk" , sans-serif;
+  color: #FFFFFF;
+  background-color: #1D1D1D;
+}
+
+/* default css start */
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #1D1D1D;
+}
+a:hover{
+  color: #1D1D1D;
+}
+/* bg fix */
+.bg-fix{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* font family */
+.tk-freight-text-pro { font-family: "freight-text-pro",serif; }
+.tk-aktiv-grotesk { font-family: "aktiv-grotesk",sans-serif; }
+
+/* background color */
+.dandelion-bg{
+  background-color: #E2E729;
+}
+
+
+/* border radius */
+.border-radius{
+  border-radius: 18px;
+}
+/* color */
+.black-color{
+  color: #000000;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+/* heading style */
+h1,
+h2,
+h2,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: "freight-text-pro",serif;
+  color: #E2E729;
+}
+h1{
+  font-size: 88px;
+}
+h2{
+  font-size: 62px;
+}
+h3{
+  font-size: 40px;
+}
+h4{
+  font-size: 32px;
+}
+h5{
+  font-size: 24;
+}
+h6{
+  font-size: 20px;
+}
+/* title */
+
+
+
+/* button css */
+.btn-1 {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  border: 1px solid #E2E729;
+  padding: 12px 53px;
+  border-radius: 109px;
+  background: transparent;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+.btn-1:hover {
+  color: #000000;
+  background: #E2E729;
+}
+/* sub-title */
+.sub-title{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #F5F5F5;
+  letter-spacing: 3.52px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.mb-p p:last-child{
+  margin-bottom: 0px;
+}
+/* container */
+.container-xl{
+  max-width: 1334px;
+}
+.container-md{
+ max-width: 1240px;
+}
+.container{
+  max-width: 1064px;
+}
+
+/* offcanvas css start */
+.offcanvas {
+  width: 100% !important;
+  background: rgb(0,0,0);
+  background: linear-gradient(104deg, #000 3.02%, #373737 61.11%, #282828 96.55%);
+  padding-top: 54px;
+  padding-bottom: 222px;
+}
+.btn-close {
+  --bs-btn-close-bg: url("../images/svg-icon/close.svg");
+}
+.btn-close:focus {
+  outline: 0;
+  box-shadow: none;
+  opacity: none;
+}
+.offcanvas.offcanvas-end {
+  border-left: 0;
+}
+.offcanvas-header {
+  padding: 0;
+}
+.offcanvas-body {
+  padding: 0;
+  padding-top: 191px;
+}
+.offcanvas .menu-wrapper .menu-name{
+  margin-right: 0;
+}
+
+.nav-link{
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "freight-text-pro",serif; 
+  color: #696969;
+  transition: all 0.3s linear;
+}
+.nav-link:hover{
+  color: #FFFFFF;
+}
+.offcanvas-nav .nav-item > .sub-menu{
+  display: none;
+}
+
+.offcanvas-nav .nav-item > .sub-menu .nav-link{
+  font-size: 30px;
+}
+.offcanvas-nav .nav-item > .sub-menu .navbar-nav{
+  margin-right: 42px;
+}
+
+
+/* offcanvas css end */
+
+/* swipper css start*/
+
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  height: 1px;
+  left: 0;
+  top: auto;
+  bottom: -41px;
+  background: #FFFFFF;
+
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background:#E2E729;
+  top: -2.5px;
+  height: 5px;
+
+}
+.swiper-button-next, .swiper-button-prev {
+  top: auto;
+  bottom: -109px;
+  height: 35px;
+  width: 22px;
+  left: 0;
+  right: auto;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after  , .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: auto;
+  left: 53px;
+}
+.swiper-button-next.swiper-button-disabled svg , .swiper-button-prev.swiper-button-disabled svg {
+  opacity: 1;
+  cursor: auto;
+  pointer-events: none;
+  color: #696969;
+}
+
+/* swipper css end*/
+
+.box-shadow{
+  box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* default css end */
+
+/* header section css start */
+.header-area{
+  padding: 31px 0 28px;
+}
+.menu-name {
+  display: inline-block;
+  font-size: 23px;
+  letter-spacing: 1.61px;
+  margin-right: 10px;
+}
+.logo-area {
+  max-width: 282px;
+}
+
+
+
+
+
+
+
+
+
+
+/* header section css end */
+
+/* banner section css start */
+.banner-area-section{
+  min-height: 800px;
+  padding: 100px 0;
+  background-color: #000000;
+}
+
+.video-info{
+  z-index: -1;
+}
+.inner-video::before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 60%;
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+
+}
+.banner-caption{
+  max-width: 1020px;
+}
+.banner-caption p{
+  max-width: 628px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.banner-caption p , .section-title-wrapper p{
+  font-size: 18px;
+}
+.main-title{
+  line-height: 1.1;
+  letter-spacing: -1.76px;
+}
+
+.banner-caption h1{
+  margin-bottom: 62px;
+}
+.read-more-wrapper{
+  bottom: 28px;
+}
+.read-more-btn {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #E2E729;
+}
+.read-more-btn .down-arrow{
+  margin-top: 10px;
+  transition: 0.3s linear;
+}
+.read-more-btn:hover{
+  color: #E2E729;
+}
+.read-more-btn:hover .down-arrow{
+ transform: translateY(5px);
+}
+
+
+/* banner section css end */
+
+/* services section start */
+
+.service-img-wrapper{
+  background-image: url('../images/services/service-bg.jpg');
+  min-height: 673px;
+  background-position: top center;
+}
+
+.overlay::before{
+  position: absolute;
+  width: 100%;
+  height: 490px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(184deg, #1D1D1D 14.54%, rgba(29, 29, 29, 0.00) 96.58%);
+  z-index: -1;
+  transform: rotate(180deg);
+  content: "";
+}
+
+.service-slider{
+  margin-top: 45px;
+}
+.section-title-wrapper .sub-title{
+  margin-bottom: 12px;
+}
+.section-title-wrapper h2{
+  margin-bottom: 21px;
+}
+.our-service-section{
+  padding-bottom: 164px;
+}
+.service-img {
+  border-radius: 25px;
+  overflow: hidden;
+}
+.service-card-wrapper h6{
+  line-height: 1.4;
+  margin-top: 13px;
+}
+
+.service-slider .swiper {
+  overflow: inherit;
+}
+/* services section end */
+
+
+/* market section css start  */
+.market-section{
+  background:linear-gradient(117deg, #282828 -4.91%, #373737 23.76%, #000 66.81%);
+  padding-top: 122px;
+  padding-bottom: 115px;
+}
+.market-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+.market-section .section-title-wrapper {
+  max-width: 616px;
+}
+.market-card-wrapper{
+  border: 1px solid transparent;
+  transition: 0.3s linear;
+}
+.market-card-wrapper:hover{
+  border: 1px solid #E2E729;
+
+}
+.market-card-wrapper::before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #121212;
+  opacity: 70%;
+  content: "";
+  border-radius: 18px;
+  transition: 0.3s linear;
+}
+.market-card-wrapper:hover::before{
+  background-color: #E2E729;
+}
+.market-card-wrapper h6{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  letter-spacing: 1px;
+  padding: 0 10px;
+  line-height: 1.4;
+}
+.market-section .row {
+  --bs-gutter-x: 23px;
+  --bs-gutter-y: 21px;
+}
+
+/* market section css end  */
+
+/* about us section start */
+
+.popup-section.overlay::before{
+  background: linear-gradient(187deg, #1D1D1D 16.23%, rgba(29, 29, 29, 0.00) 94.36%);
+  z-index: 1;
+  height: 288px;
+}
+
+.popup-btn {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 183px;
+  width: 183px;
+  display: block;
+  border-radius: 183px;
+  padding: 27px;
+  background: rgba(217, 217, 214, 0.34);
+  z-index: 2;
+}
+.inner-play-btn {
+  height: 128px;
+  width: 128px;
+  background: #E2E729;
+  border-radius: 128px;
+}
+.inner-play-btn img {
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 10px;
+}
+.about-logo {
+  position: absolute;
+  left: 50%;
+  bottom: 59px;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+.about-content-wrapper .sub-title{
+  margin-bottom: 31px;
+}
+.about-content-wrapper .sub-title{
+  margin-bottom: 31px;
+}
+/* about us section  end */
+
+

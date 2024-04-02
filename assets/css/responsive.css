@@ -1,0 +1,78 @@
+/* 1400, 1199, 991, 767, 575, 480, 360, 320 */
+/* CSS Index
+-----------------------------------
+1.default css
+-----------------------------------
+*/
+/* min-width 1430 */
+@media (min-width: 1430px) {
+}
+/* max-width 1399 */
+@media (max-width: 1399.98px) {
+}
+/* max-width 1199 */
+@media (max-width: 1199.98px) { 
+}
+/* max-width 1399 - min-width 992*/
+@media (max-width: 1199.98px) and (min-width: 992px) {
+}
+/* max-width 991 */
+@media (max-width: 991.98px) {
+    h1{
+        font-size: 78px;
+      }
+      h2{
+        font-size: 52px;
+      }
+   
+}
+/* max-width 767 */
+@media (max-width: 767.98px) { 
+    h1{
+        font-size: 68px;
+      }
+      h2{
+        font-size: 44px;
+      }
+      h3{
+        font-size: 36px;
+      }
+      h4{
+        font-size: 30px;
+      }
+      h5{
+        font-size: 20;
+      }
+      h6{
+        font-size: 18px;
+      }
+      /* header section css start */
+    .logo-area {
+        max-width: 150px;
+    }
+    /* header section css end*/
+}
+/* max-width 575 */
+@media (max-width: 575.98px) {
+  
+}
+/* max-width 479 */
+@media (max-width: 479.98px) {
+    h1{
+        font-size: 54px;
+      }
+      h2{
+        font-size: 34px;
+      }
+    /* header section css start */
+    .logo-area {
+        max-width: 120px;
+    }
+    /* header section css end*/
+ 
+  
+}
+/* max-width 383 */
+@media (max-width: 383.98px) {
+  
+}
