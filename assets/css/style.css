@@ -14,6 +14,7 @@
 3.service section css
 4.market section  css
 5.about us section css
+6.featured section css
 -----------------------------------
 */
 
@@ -46,20 +47,14 @@ a:hover{
 .tk-freight-text-pro { font-family: "freight-text-pro",serif; }
 .tk-aktiv-grotesk { font-family: "aktiv-grotesk",sans-serif; }
 
-/* background color */
-.dandelion-bg{
-  background-color: #E2E729;
-}
+
 
 
 /* border radius */
 .border-radius{
   border-radius: 18px;
 }
-/* color */
-.black-color{
-  color: #000000;
-}
+
 img{
   max-width: 100%;
   height: auto;
@@ -89,7 +84,7 @@ h4{
   font-size: 32px;
 }
 h5{
-  font-size: 24;
+  font-size: 24px;
 }
 h6{
   font-size: 20px;
@@ -99,7 +94,7 @@ h6{
 
 
 /* button css */
-.btn-1 {
+.letel-btn {
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 400;
@@ -112,8 +107,9 @@ h6{
   text-align: center;
   display: inline-block;
   transition: all 0.3s linear;
+  letter-spacing: 2.08px;
 }
-.btn-1:hover {
+.letel-btn:hover {
   color: #000000;
   background: #E2E729;
 }
@@ -241,6 +237,14 @@ h6{
 .box-shadow{
   box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/* background color */
+.dandelion-bg{
+  background-color: #E2E729;
+}
+
+
+
+
 /* default css end */
 
 /* header section css start */
@@ -385,11 +389,13 @@ h6{
   padding-top: 122px;
   padding-bottom: 115px;
 }
-.market-bg {
+.market-bg , .featured-bg  {
   position: absolute;
   left: 0;
   top: 0;
   width: 50%;
+  height: 100%;
+  z-index: -1;
 }
 .market-section .section-title-wrapper {
   max-width: 616px;
@@ -477,9 +483,129 @@ h6{
 .about-content-wrapper .sub-title{
   margin-bottom: 31px;
 }
-.about-content-wrapper .sub-title{
-  margin-bottom: 31px;
+.about-content-wrapper .section-title-wrapper{
+  margin-bottom: 25px;
+  max-width: 1022px;
+}
+.about-img-wrapper{
+  border-radius: 30px;
+  margin-bottom: 90px;
 }
 /* about us section  end */
+
+/* featured section css start  */
+.featured-section{
+  padding-top: 73px;
+  padding-bottom: 80px;
+  background: #D9D9D9;
+  background: linear-gradient(108deg, #282828 14.78%, #373737 44.99%, #000 94.51%);
+}
+.featured-section .section-title-wrapper{
+  max-width: 848px;
+  margin-bottom: 45px;
+}
+.featured-card-img{
+  border-radius: 16px;
+}
+.featured-card-content{
+  margin-top: 41px;
+}
+.letel-btn.letel-sub-btn{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 17px;
+  letter-spacing: normal;
+}
+.version-2 .read-more-btn {
+  font-size: 16px;
+  font-weight: 400;
+}
+.version-2 .read-more-btn:hover{
+  text-decoration: none !important;
+}
+.version-2 .read-more-btn .right-arrow{
+  transition: 0.3s linear;
+}
+.version-2 .read-more-btn:hover .right-arrow{
+  transform: translateX(5px);
+}
+.bottom-btn-wrapper{
+  margin-top: 51px;
+}
+.featured-bg {
+  left: 5px;
+  width:100%;
+ 
+}
+/* featured section css end */
+
+/* cta section start */
+.cta-section{
+  background-image: url('../images/cta/cta-main-img.jpg');
+  min-height: 588px;
+}
+.cta-section::before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: #000000;
+  opacity: 80%;
+  z-index: -1;
+}
+.cta-img{
+  opacity: 0.3;
+  z-index: 1;
+}
+.cta-inner-content{
+  margin-bottom: 38px;
+}
+.cta-content-wrapper .letel-btn{
+  padding: 12px 24px;
+}
+/* cta section end */
+
+/* footer section css start */
+.footer-area {
+  padding-top: 68px;
+  padding-bottom: 74px;
+  background: linear-gradient(108deg, #282828 14.78%, #373737 44.99%, #000 94.51%);
+}
+.address-info h6 , .address-info address{
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 1.4px;
+  margin-bottom: 5px;
+}
+.address-info address {
+   font-weight: 400;
+   letter-spacing: normal;
+   margin: 0;
+}
+.social-link {
+  margin-top: 75px;
+  display: block;
+}
+.footer-img {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+}
+.footer-nav-info h6 , .footer-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 3.04px;
+}
+.footer-link {
+  letter-spacing: normal;
+}
+.footer-nav-wrapper .row{
+  --bs-gutter-x: 90px;
+}
+/* footer section css end */
 
 
