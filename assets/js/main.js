@@ -111,11 +111,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   $(".text-animation").each(function (index) {
     let tl = gsap.timeline({ paused: true });
-    tl.from($(this).find(".char"), { yPercent: 100, duration: 0.2, ease: "power1.out", stagger: { amount: 0.6 } });
+    tl.from($(this).find(".char"), { yPercent: 100, duration: 0.3, ease: "power1.inOut", stagger: { amount: 0.6 } });
     createScrollTrigger($(this), tl);
   });
-
- 
 
   // Avoid flash of unstyled content
   gsap.set(".text-animation", { opacity: 1 });
