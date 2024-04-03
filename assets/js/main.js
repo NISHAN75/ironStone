@@ -4,12 +4,9 @@
 
         $(".nav-link").click(function(){
             $(".sub-menu-wrapper").slideToggle();
-            $('.icon-toogle').toggleClass('show hide');
-            $('.nav-link').toggleClass('active');
-            
-
+            $('.icon-toogle').toggleClass('show hide');            
           });
-     
+         
           
 
           var service_slider = new Swiper(".service-slider-wrapper", {
@@ -24,7 +21,7 @@
                 prevEl: ".swiper-button-prev",
               },
               breakpoints: {
-                310: {
+                250: {
                   slidesPerView: 1,
                   spaceBetween: 10,
                 },

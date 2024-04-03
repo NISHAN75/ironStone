@@ -1,9 +1,23 @@
 /* 1400, 1199, 991, 767, 575, 480, 360, 320 */
+
+/*
+Author: 
+Support: 
+Description: 
+Version: 1.0
+*/
 /* CSS Index
 -----------------------------------
 1.default css
+2.header section css
+3.banner section css
+4.service section css
+5.market section  css
+6.about us section css
+7.featured section css
+8.cta section css
+9.footer section css
 -----------------------------------
-*/
 /* min-width 1430 */
 @media (min-width: 1430px) {}
 
@@ -12,6 +26,25 @@
 
 /* max-width 1199 */
 @media (max-width: 1199.98px) {
+
+	/* offcanvas section css start */
+	.header-ofcanvas::before {
+		display: none;
+	}
+
+	/* offcanvas section css end */
+
+	/* header section css start */
+
+	.right-site-nav {
+		padding-left: 0;
+	}
+
+	.left-site-nav {
+		padding-left: 0px;
+	}
+
+	/* header section css end */
 
 	/* footer section start */
 	.footer-nav-wrapper .row {
@@ -33,6 +66,19 @@
 	h2 {
 		font-size: 52px;
 	}
+
+  /* offcanvas menu css start*/
+  .offcanvas-body {
+    padding: 0px;
+   }
+  /* offcanvas menu css  end */
+
+  /* market section css start */
+  .market-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+  /* market section css end */
 
 	/* about us section css start */
 	.popup-btn {
@@ -57,6 +103,8 @@
 	}
 
 	/* about us section css end */
+
+
 
 	/* featured section start */
 	.featured-card-wrapper {
@@ -165,6 +213,23 @@
 
 /* max-width 575 */
 @media (max-width: 575.98px) {
+
+	/* header section css start */
+	/* offcanvas */
+	.sub-menu {
+		flex-direction: column;
+    margin-bottom: 30px;
+	}
+
+	.sub-menu-inner {
+		margin-right: 0px;
+	}
+
+	.nav-link {
+		font-size: 24px;
+	}
+
+	/* header section css end */
 	/* about us section css start */
 
 	.about-logo {
@@ -183,10 +248,31 @@
 		font-size: 54px;
 	}
 
+
 	/* header section css start */
 	.logo-area {
 		max-width: 120px;
 	}
+
+	/* offcanvas  start */
+	.offcanvas-nav>li>a {
+		font-size: 70px;
+	}
+
+	.icon-toogle {
+		margin-top: 7px;
+	}
+
+	.icon-toogle.show {
+		margin-top: 7px;
+	}
+
+	.offcanvas-nav.version-2 .nav-link {
+		font-size: 38px;
+	}
+
+	/* offcanvas  end */
+
 
 	/* header section css end*/
 	/* about us section css start */
