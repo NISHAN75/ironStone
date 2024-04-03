@@ -133,7 +133,6 @@ body {
   .offcanvas.offcanvas-end {
   border-left: 0;
   }
-
   .offcanvas {
     padding: 0;
     padding-top: 54px;
@@ -231,7 +230,12 @@ body {
   /* default css end */
   /* header section css start */
   .header-area {
-  padding: 31px 0 28px;
+    padding: 31px 0 28px;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    left: 0;
   }
   .menu-name {
   display: inline-block;
@@ -378,7 +382,7 @@ body {
   height: 490px;
   left: 0;
   bottom: 0px;
-  background: linear-gradient(184deg, #1D1D1D 14.54%, rgba(29, 29, 29, 0.00) 96.58%);
+  background: linear-gradient(180deg, #1D1D1D 14.54%, rgba(29, 29, 29, 0.00) 96.58%);
   z-index: -1;
   transform: rotate(180deg);
   content: "";
@@ -458,7 +462,7 @@ body {
   /* market section css end  */
   /* about us section start */
   .popup-section.overlay::before {
-  background: linear-gradient(187deg, #1D1D1D 16.23%, rgba(29, 29, 29, 0.00) 94.36%);
+  background: linear-gradient(180deg, #1D1D1D 16.23%, rgba(29, 29, 29, 0.00) 94.36%);
   z-index: 1;
   height: 288px;
   }

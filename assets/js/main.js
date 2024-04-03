@@ -1,6 +1,15 @@
 (function ($) {
     $(document).ready(function () {
-
+      gsap.registerPlugin(ScrollSmoother);
+      let smoother = ScrollSmoother.create({
+        wrapper: "#smooth-wrapper",
+        content: "#smooth-content",
+        smooth: 1.35,
+        effects: true,
+        smoothTouch: false,
+        normalizeScroll: false,
+        ignoreMobileResize: true,
+      });
 
         $(".nav-link").click(function(){
             $(".sub-menu-wrapper").slideToggle();
