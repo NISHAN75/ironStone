@@ -26,65 +26,94 @@
 	<body>
 
 		<!-- header offcanvs menu start-->
-		<div class="header-offcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-			<div class="container-xl">
-				<div class="offcanvas-header d-block">
-					<div class="header-info-wrapper d-flex align-items-center justify-content-between">
-						<div class="logo-area">
-							<img src="assets/images/svg-icon/white-logo.svg" alt="logo-icon">
-						</div>
-						<div class="menu-wrapper">
-							<span class="menu-name text-capitalize text-black text-white">menu</span>
-							<button class="btn-close text-reset border-0 bg-transparent" type="button"  data-bs-dismiss="offcanvas" aria-label="Close">
-							</button>
-						</div>
+
+
+		<div class="header-ofcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+		  <div class="container-xl">
+			<div class="offcanvas-header">
+				<div class="header-info-wrapper w-100 d-flex align-items-center justify-content-between">
+					<div class="logo-area">
+						<img src="assets/images/svg-icon/white-logo.svg" alt="logo-icon">
 					</div>
+					<div class="menu-wrapper d-flex align-items-center">
+						<span class="menu-name text-capitalize text-white">menu</span>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					
 				</div>
 			</div>
+		  </div>
+		<div class="offcanvas-body">
+			
 			<div class="container-md">
-				<div class="offcanvas-body">
-					<div class="row">
-						<div class="col-lg-8">
-							<nav>
-								<ul class="offcanvas-nav list-unstyled mb-0">
-								   <li class="nav-item">
-									 <a class="nav-link position-relative"href="#">Services<span class="pluse-icon"><img src="assets/images/svg-icon/pluse.svg" alt="pluse-icon"></span><span class="minus-icon"><img src="assets/images/svg-icon/minus.svg" alt="minus-icon"></span></a>
-									 <div class="sub-menu">
-										<div class="sub-men-info d-flex align-items-start">
-											<ul class="navbar-nav">
-												<li class="nav-item">
-												  <a class="nav-link text-white" href="#">Civil Engineering</a>
-												</li>
-												<li class="nav-item">
-												  <a class="nav-link text-white" href="#">LIDAR Services</a>
-												</li>
-												<li class="nav-item">
-												  <a class="nav-link text-white" href="#">GIS Mapping &<br> Inspections</a>
-												</li>
-											 </ul>
-											<ul class="navbar-nav">
-												<li class="nav-item">
-												  <a class="nav-link text-white" href="#">Drone Services</a>
-												</li>
-												<li class="nav-item">
-												  <a class="nav-link text-white" href="#">Surveying Services</a>
-												</li>
-												<li class="nav-item">
-												  <a class="nav-link text-white" href="#">Digital Terrain Models</a>
-												</li>
+				<div class="row">
+					<div class="col-lg-8">
+						<nav>
+							<ul class="offcanvas-nav list-unstyled mb-0">
+								<li class="nav-item">
+									<a class="nav-link active d-inline position-relative" href="#">
+										Services
+										<img class="icon-toogle show pluse-icon show" src="assets/images/svg-icon/pluse.svg" alt="pluse-icon">
+										<img class="icon-toogle minus-icon hide" src="assets/images/svg-icon/minus.svg" alt="minus-icon">
+									</a>
+									<div class="sub-menu-wrapper">
+										<div class="sub-menu d-flex align-items-start">
+											<ul class="sub-menu-inner list-unstyled mb-0">
+												<li><a href="#" class="text-white nav-link">Civil Engineering</a></li>
+												<li><a href="#" class="text-white nav-link">Civil Engineering</a></li>
+												<li><a href="#" class="text-white nav-link">Civil Engineering</a></li>
+											</ul>
+											<ul class="sub-menu-inner list-unstyled mb-0">
+												<li><a href="#" class="text-white nav-link">Civil Engineering</a></li>
+												<li><a href="#" class="text-white nav-link">Civil Engineering</a></li>
+												<li><a href="#" class="text-white nav-link">Civil Engineering</a></li>
 											</ul>
 										</div>
-									 </div>
-								   </li>
-								</ul>
-							</nav>
-						</div>
-						<div class="col-lg-4">
-					
-						</div>
+									</div>
+									
+								</li>
+							</ul>
+							<ul class="offcanvas-nav list-unstyled mb-0">
+								<li class="nav-item">
+									<a class="nav-link active d-inline position-relative" href="#">
+										Services
+										<img class="icon-toogle show pluse-icon show" src="assets/images/svg-icon/pluse.svg" alt="pluse-icon">
+										<img class="icon-toogle minus-icon hide" src="assets/images/svg-icon/minus.svg" alt="minus-icon">
+									</a>
+									<div class="sub-menu-wrapper">
+										<div class="sub-menu d-flex align-items-start">
+											<ul class="sub-menu-inner list-unstyled mb-0">
+												<li><a href="#" class="text-white nav-link">Civil Engineering</a></li>
+												<li><a href="#" class="text-white nav-link">Civil Engineering</a></li>
+												<li><a href="#" class="text-white nav-link">Civil Engineering</a></li>
+											</ul>
+											<ul class="sub-menu-inner list-unstyled mb-0">
+												<li><a href="#" class="text-white nav-link">Civil Engineering</a></li>
+												<li><a href="#" class="text-white nav-link">Civil Engineering</a></li>
+												<li><a href="#" class="text-white nav-link">Civil Engineering</a></li>
+											</ul>
+										</div>
+									</div>
+									
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-lg-4">
+						<nav>
+							<ul class="offcanvas-nav version-2 list-unstyled mb-0">
+								<li><a href="#" class="nav-link d-inline">Home</a></li>
+								<li><a href="#" class="nav-link d-inline">About Us</a></li>
+								<li><a href="#" class="nav-link d-inline">Careers</a></li>
+								<li><a href="#" class="nav-link d-inline">Projects</a></li>
+								<li><a href="#" class="nav-link d-inline">Contact</a></li>
+								<li><a href="#" class="nav-link d-inline">About Us</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 		<!-- header offcanvs menu end-->
 
@@ -98,7 +127,7 @@
 						</div>
 						<div class="menu-wrapper">
 							<span class="menu-name text-capitalize text-black">menu</span>
-							<button class="menu-btn-wrapper border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+							<button class="menu-btn-wrapper p-0 m-0 border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
 								<span><img src="assets/images/svg-icon/menu.svg" alt="menu-icon"></span>
 							</button>
 						</div>
@@ -344,7 +373,7 @@
 					<div class="featured-bg position-absolute">
 						<img src="assets/images/featured/featured-bg.png" alt="featured-img">
 					</div>
-					<div class="container">
+					<div class="container-xl">
 						<div class="row justify-content-center">
 							<div class="col-lg-10">
 								<div class="section-title-wrapper text-center mb-p">

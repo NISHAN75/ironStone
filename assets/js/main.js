@@ -3,9 +3,14 @@
 
 
         $(".nav-link").click(function(){
-            $(".sub-menu").slideToggle();
+            $(".sub-menu-wrapper").slideToggle();
+            $('.icon-toogle').toggleClass('show hide');
+            $('.nav-link').toggleClass('active');
+            
 
           });
+     
+          
 
           var service_slider = new Swiper(".service-slider-wrapper", {
             slidesPerView: 3,

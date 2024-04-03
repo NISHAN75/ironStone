@@ -138,55 +138,35 @@ h6{
 }
 
 /* offcanvas css start */
-.offcanvas {
-  width: 100% !important;
-  background: rgb(0,0,0);
-  background: linear-gradient(104deg, #000 3.02%, #373737 61.11%, #282828 96.55%);
-  padding-top: 54px;
-  padding-bottom: 222px;
-}
-.btn-close {
-  --bs-btn-close-bg: url("../images/svg-icon/close.svg");
-}
-.btn-close:focus {
-  outline: 0;
-  box-shadow: none;
-  opacity: none;
-}
 .offcanvas.offcanvas-end {
   border-left: 0;
 }
 .offcanvas-header {
   padding: 0;
+  padding-top: 54px;
+}
+.header-ofcanvas {
+  width: 100% !important;
+  background: linear-gradient(104deg, #000 3.02%, #373737 61.11%, #282828 96.55%);
+}
+
+.header-ofcanvas .menu-name {
+  margin-right: 10px;
+}
+.offcanvas-header .btn-close {
+  margin: 0;
+  padding: 0;
+  --bs-btn-close-bg: url('../images/svg-icon/close.svg');
+  --bs-btn-close-focus-shadow:none;
+  border: 0;
+  border-radius: 0;
+  opacity: 1;
+  height: 18px;
+  width: 18px;
 }
 .offcanvas-body {
-  padding: 0;
+  padding: 0px;
   padding-top: 191px;
-}
-.offcanvas .menu-wrapper .menu-name{
-  margin-right: 0;
-}
-
-.nav-link{
-  font-size: 100px;
-  font-weight: 400;
-  line-height: 1.5;
-  font-family: "freight-text-pro",serif; 
-  color: #696969;
-  transition: all 0.3s linear;
-}
-.nav-link:hover{
-  color: #FFFFFF;
-}
-.offcanvas-nav .nav-item > .sub-menu{
-  display: none;
-}
-
-.offcanvas-nav .nav-item > .sub-menu .nav-link{
-  font-size: 30px;
-}
-.offcanvas-nav .nav-item > .sub-menu .navbar-nav{
-  margin-right: 42px;
 }
 
 
@@ -255,7 +235,7 @@ h6{
   display: inline-block;
   font-size: 23px;
   letter-spacing: 1.61px;
-  margin-right: 10px;
+  margin-right: 18px;
 }
 .logo-area {
   max-width: 282px;
@@ -263,6 +243,63 @@ h6{
 
 
 
+/* offcanvas menu */
+.sub-menu-wrapper{
+  display: none;
+}
+.nav-link{
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "freight-text-pro",serif;
+  color: #585858;
+  transition: 0.3s linear;
+  border-bottom: 1px solid transparent;
+}
+.nav-link.active {
+  color: #E2E729 !important;
+}
+.offcanvas-nav > li > a {
+  font-size: 100px;
+}
+.offcanvas-nav > li > a:hover{
+  color: #FFFFFF;
+}
+.sub-menu-inner{
+  margin-right: 41px;
+}
+.offcanvas-nav .sub-menu-inner .nav-link:hover , .offcanvas-nav.version-2 .nav-link:hover {
+
+ color: #E2E729 !important;
+ border-bottom: 1px solid #E2E729;
+}
+
+
+
+
+.icon-toogle {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  right: -24px;
+  transform: translate(50%, -50%);
+  margin-top: 13px;
+  transition: 0.3s linear;
+}
+
+.icon-toogle.hide {
+  margin-top: 30px;
+  visibility: hidden;
+  opacity: 0;
+}
+.icon-toogle.show {
+  margin-top: 13px;
+  visibility: visible;
+  opacity: 1;
+}
+.offcanvas-nav.version-2 .nav-link {
+  font-size: 54px;
+  color: #696969;
+}
 
 
 
@@ -349,7 +386,7 @@ h6{
   width: 100%;
   height: 490px;
   left: 0;
-  bottom: 0;
+  bottom: 0px;
   background: linear-gradient(184deg, #1D1D1D 14.54%, rgba(29, 29, 29, 0.00) 96.58%);
   z-index: -1;
   transform: rotate(180deg);
@@ -590,10 +627,10 @@ h6{
 }
 
 .footer-img {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 50%;
+  left: 0px;
+  top: -104px;
+  height: 586px;
+  width: 620px;
   z-index: -1;
 }
 .footer-nav-info h6 , .footer-link {
