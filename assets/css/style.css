@@ -452,9 +452,7 @@ h6{
   transform: translate(-50%, -50%);
   height: 183px;
   width: 183px;
-  display: block;
   border-radius: 183px;
-  padding: 27px;
   background: rgba(217, 217, 214, 0.34);
   z-index: 2;
 }
@@ -467,11 +465,7 @@ h6{
 .inner-play-btn img {
   height: 55px;
   width: 55px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .about-logo {
   position: absolute;
@@ -568,7 +562,7 @@ h6{
 /* cta section end */
 
 /* footer section css start */
-.footer-area {
+.top-footer-area  {
   padding-top: 68px;
   padding-bottom: 74px;
   background: linear-gradient(108deg, #282828 14.78%, #373737 44.99%, #000 94.51%);
@@ -584,15 +578,23 @@ h6{
    letter-spacing: normal;
    margin: 0;
 }
+.social-link-wrapper li{
+  margin-right: 22px;
+}
+.social-link-wrapper li:last-child{
+  margin-right: 0;
+}
 .social-link {
   margin-top: 75px;
   display: block;
 }
+
 .footer-img {
   left: 0;
   top: 0;
   height: 100%;
   width: 50%;
+  z-index: -1;
 }
 .footer-nav-info h6 , .footer-link {
   font-size: 16px;
@@ -606,6 +608,30 @@ h6{
 .footer-nav-wrapper .row{
   --bs-gutter-x: 90px;
 }
+.bottom-footer-area{
+  padding-top: 105px;
+  padding-bottom: 17px;
+}
+.bottom-footer-img{
+  margin-bottom: 92px;
+}
+.copy-right-inner {
+  border-top: 1px solid rgba(0, 0, 0, 0.50);
+  padding-top: 17px;
+  font-size: 14px;
+  color: rgba(16, 14, 14, 0.50);
+  font-weight: 400;
+}
+.other-link{
+  color: rgba(16, 14, 14, 0.50);
+  transition: 0.3s linear;
+}
+.other-link:hover{
+  color: #000;
+  text-decoration: none !important;
+}
+
+
 /* footer section css end */
 
 

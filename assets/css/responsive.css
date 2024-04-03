@@ -12,9 +12,15 @@
 }
 /* max-width 1199 */
 @media (max-width: 1199.98px) { 
+  /* footer section start */
+  .footer-nav-wrapper .row {
+    --bs-gutter-x: 24px;
+   }
+  /* footer section end */
 }
 /* max-width 1399 - min-width 992*/
 @media (max-width: 1199.98px) and (min-width: 992px) {
+
 }
 /* max-width 991 */
 @media (max-width: 991.98px) {
@@ -24,6 +30,37 @@
       h2{
         font-size: 52px;
       }
+
+    /* about us section css start */
+      .popup-btn {
+        height: 140px;
+        width: 140px;
+        border-radius: 140px;
+      }
+      .inner-play-btn {
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        }
+        .about-logo {
+          bottom: 20px;
+      }
+      .inner-play-btn img {
+        height: 45px;
+        width: 45px;
+      }
+    /* about us section css end */
+
+    /* featured section start */
+    .featured-card-wrapper {
+      margin-bottom: 30px;
+  }
+    /* featured section end */
+
+
+
+
+    
    
 }
 /* max-width 767 */
@@ -46,14 +83,68 @@
       h6{
         font-size: 18px;
       }
+      /* banner section css start */
+      .banner-area-section {
+        min-height: 550px;
+     }
+      .banner-caption h1 {
+        margin-bottom: 35px;
+    }
+      /* banner section css end */
       /* header section css start */
     .logo-area {
         max-width: 150px;
     }
     /* header section css end*/
+     /* about us section css start */
+     .popup-btn {
+      height: 100px;
+      width: 100px;
+      border-radius: 100px;
+    }
+    .inner-play-btn {
+      height: 80px;
+      width: 80px;
+      border-radius: 80px;
+      }
+      .about-logo {
+        bottom: 20px;
+        width: 70px;
+    }
+    .inner-play-btn img {
+      height: 35px;
+      width: 35px;
+  }
+    
+  /* about us section css end */
+
+  /* cta section start */
+  .cta-section {
+    min-height: 400px;
+  }
+  /* cta section end */
+
+
+
+
+  /* footer section start */
+  .footer-nav-wrapper , .other-link-wrapper {
+      margin-top: 17px;
+  }
+  /* footer section end */
 }
 /* max-width 575 */
 @media (max-width: 575.98px) {
+  /* about us section css start */
+ 
+    .about-logo {
+      bottom: 10px;
+      width: 50px;
+  }
+   /* about us section css end */
+
+  
+  
   
 }
 /* max-width 479 */
@@ -61,18 +152,41 @@
     h1{
         font-size: 54px;
       }
-      h2{
-        font-size: 34px;
-      }
+      
     /* header section css start */
     .logo-area {
         max-width: 120px;
     }
     /* header section css end*/
+    /* about us section css start */
+    .popup-btn {
+      height: 70px;
+      width: 70px;
+      border-radius: 70px;
+    }
+    .inner-play-btn {
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      }
+    .about-logo {
+      width: 30px;
+  }
+  .inner-play-btn img {
+    height: 20px;
+  }
+   /* about us section css end */
  
   
 }
 /* max-width 383 */
 @media (max-width: 383.98px) {
+
+  /* footer section css  start*/
+  .other-link-wrapper ul {
+    flex-direction: column;
+    gap: 5px !important;
+ }
+  /* footer section end  */
   
 }
