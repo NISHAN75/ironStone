@@ -229,6 +229,9 @@ body {
   }
   /* default css end */
   /* header section css start */
+  #smooth-wrapper {
+    margin-top: 98px;
+  }
   .header-area {
     padding: 31px 0 28px;
     position: fixed;
@@ -664,3 +667,9 @@ body {
   text-decoration: none !important;
   }
   /* footer section css end */
+  .word {
+    overflow: hidden;
+    padding-bottom: 0em;
+    margin-bottom: -0.1em;
+    transform-origin: bottom;
+  }
