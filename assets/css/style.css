@@ -133,18 +133,17 @@ body {
   .offcanvas.offcanvas-end {
   border-left: 0;
   }
-  .offcanvas- {
-  padding: 0;
-  padding-top: 54px;
+
+  .offcanvas {
+    padding: 0;
+    padding-top: 54px;
+    width: 100% !important;
+    background: linear-gradient(104deg, #000 3.02%, #373737 61.11%, #282828 96.55%);
   }
-  .-ofcanvas {
-  width: 100% !important;
-  background: linear-gradient(104deg, #000 3.02%, #373737 61.11%, #282828 96.55%);
-  }
-  .-ofcanvas .menu-name {
+  .ofcanvas .menu-name {
   margin-right: 10px;
   }
-  .offcanvas- .btn-close {
+  .offcanvas .btn-close {
   margin: 0;
   padding: 0;
   --bs-btn-close-bg: url('../images/svg-icon/close.svg');
@@ -167,7 +166,7 @@ body {
   width: 1243px;
   z-index: -1;
   }
-  .-ofcanvas::before {
+  .offcanvas::before {
   position: absolute;
   left: 925px;
   top: 0;
