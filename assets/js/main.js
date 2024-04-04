@@ -33,13 +33,34 @@
       setTextAnimation(1000);
 
         $(".nav-link").click(function(){
-            $(".sub-menu-wrapper").slideToggle();
-            $('.icon-toogle').toggleClass('show hide');            
+            $(this).parent().find(".sub-menu-wrapper").slideToggle();
+            $(this).parent().find('.icon-toogle').toggleClass('show hide');   
+
           });
+        
+        // mouse enter fucntion
+        function classToggle (evt, find, toggle) {
+          [].forEach.call(document.querySelectorAll('.' + find), function(a){
+              a.classList[evt.type === 'mouseover' ? 'add' : 'remove'](toggle);
+          });
+        }
+          
+          let els = document.querySelectorAll('.nav-link');
+          
+          for (let i = 0, len = els.length; i<len; i++){
+              els[i].addEventListener('mouseover', function(e){
+                  classToggle(e, 'nav-link', 'change-color');
+              });
+              els[i].addEventListener('mouseout', function(e){
+                  classToggle(e, 'nav-link', 'change-color');
+              });
+          }
+
+
          
           
 
-          var service_slider = new Swiper(".service-slider-wrapper", {
+          let service_slider = new Swiper(".service-slider-wrapper", {
             slidesPerView: 3,
             spaceBetween: 35,
             pagination: {
@@ -129,11 +150,6 @@
         // Avoid flash of unstyled content
         gsap.set(".text-animation", { opacity: 1 });
           
-
-        
-
-        console.clear();
-
         gsap.registerPlugin(ScrollTrigger);
         
         const mediaWrap = document.querySelectorAll(".page-hero");

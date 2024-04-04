@@ -269,33 +269,40 @@ body {
   font-size: 30px;
   font-weight: 400;
   font-family: "freight-text-pro", serif;
-  color: #ffff;
+  color: #FFFFFF;
   transition: 0.3s linear;
   border-bottom: 1px solid transparent;
   }
+ 
+  .nav-link:focus, .nav-link:hover {
+    color:#FFFFFF;
+}
   .nav-link.active {
   color: #E2E729 !important;
   }
+  .nav-link.change-color{
+    color: #585858;
+  }
+  .nav-link.change-color svg line{
+    stroke: #585858;
+  }
+  
   .offcanvas-nav>li>a {
   font-size: 100px;
   }
-  .offcanvas-nav>li>a:hover {
+  /* .offcanvas-nav>li>a:hover {
   color: #FFFFFF;
-  }
+  } */
   .offcanvas-nav>li>a svg line {
   transition: 0.3s linear;
   }
-  .offcanvas-nav>li>a:hover .pluse-icon line {
+  /* .offcanvas-nav>li>a:hover .pluse-icon line {
   stroke: #FFFFFF;
-  }
+  } */
   .sub-menu-inner {
   margin-right: 41px;
   }
-  .offcanvas-nav .sub-menu-inner .nav-link:hover,
-  .offcanvas-nav.version-2 .nav-link:hover {
-  color: #E2E729 !important;
-  border-bottom: 1px solid #E2E729;
-  }
+ 
   .icon-toogle {
   position: absolute;
   top: 50%;
@@ -317,7 +324,6 @@ body {
   }
   .offcanvas-nav.version-2 .nav-link {
   font-size: 54px;
-  color: #696969;
   }
   /* header section css end */
   /* banner section css start */
