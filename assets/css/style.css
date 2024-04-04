@@ -47,6 +47,15 @@ body {
   .tk-aktiv-grotesk {
   font-family: "aktiv-grotesk", sans-serif;
   }
+
+  /* body translate */
+  .wrapper{
+    transition: 0.4s linear;
+
+  }
+  body.show .wrapper{
+    transform: translateX(-100px);
+  }
   /* border radius */
   .border-radius {
   border-radius: 18px;
@@ -137,6 +146,7 @@ body {
     padding-top: 54px;
     width: 100% !important;
     background: linear-gradient(104deg, #000 3.02%, #373737 61.11%, #282828 96.55%);
+    transition: 0.8s linear;
   }
   .ofcanvas .menu-name {
   margin-right: 10px;
@@ -259,7 +269,7 @@ body {
   font-size: 30px;
   font-weight: 400;
   font-family: "freight-text-pro", serif;
-  color: #585858;
+  color: #ffff;
   transition: 0.3s linear;
   border-bottom: 1px solid transparent;
   }
@@ -345,6 +355,14 @@ body {
   .main-title {
   line-height: 1.1;
   letter-spacing: -1.76px;
+  color: #fff;
+  }
+  .main-title .active{
+    color: #E2E729;
+    transition: 0.3s linear;
+  }
+  .main-title  .inactive {
+    transition: 0.3s linear;
   }
   .banner-caption h1 {
   margin-bottom: 62px;
@@ -371,18 +389,21 @@ body {
   /* banner section css end */
   /* services section start */
   .service-img-wrapper {
-  background-image: url('../images/services/service-bg.jpg');
   min-height: 673px;
-  background-position: top center;
+  }
+  .service-img-bg{
+    background-image: url('../images/services/service-bg.jpg');
+    background-position: top center;
+    z-index: 1;
   }
   .overlay::before {
   position: absolute;
   width: 100%;
   height: 490px;
   left: 0;
-  bottom: -2px;
+  bottom: -1px;
   background: linear-gradient(180deg, #1D1D1D 14.54%, rgba(29, 29, 29, 0.00) 96.58%);
-  z-index: -1;
+  z-index: 2;
   transform: rotate(180deg);
   content: "";
   }
@@ -416,7 +437,7 @@ body {
   .featured-bg {
   position: absolute;
   left: 0;
-  top: 0;
+  top: -50px;
   width: 50%;
   height: 100%;
   z-index: -1;
@@ -555,8 +576,13 @@ body {
   /* featured section css end */
   /* cta section start */
   .cta-section {
-  background-image: url('../images/cta/cta-main-img.jpg');
+
   min-height: 588px;
+  }
+  .cta-inner-bg {
+    background-image: url('../images/cta/cta-main-img.jpg');
+    min-height: 588px;
+    z-index: -1;
   }
   .cta-section::before {
   position: absolute;
@@ -567,7 +593,7 @@ body {
   content: "";
   background-color: #000000;
   opacity: 80%;
-  z-index: -1;
+  z-index: 1;
   }
   .cta-img {
   opacity: 0.3;
@@ -669,3 +695,5 @@ body {
     transform-origin: center;
     line-height: 1;
   }
+
+  

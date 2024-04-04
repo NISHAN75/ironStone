@@ -10,6 +10,27 @@
         normalizeScroll: false,
         ignoreMobileResize: true,
       });
+      // span change color
+      function setTextAnimation(interval) {
+        const spans = $('.main-title span');
+        let index = 0;
+    
+        setInterval(() => {
+          spans.each((i, span) => {
+            if (i === index) {
+              $(span).removeClass('inactive').addClass('active');
+            } else {
+              $(span).removeClass('active').addClass('inactive');
+            }
+          });
+    
+          index = (index + 1) % spans.length; // Move to the next span
+    
+        }, interval);
+      }
+    
+      // Call the function with the desired time interval (e.g., 300 milliseconds)
+      setTextAnimation(1000);
 
         $(".nav-link").click(function(){
             $(".sub-menu-wrapper").slideToggle();
@@ -61,9 +82,80 @@
                 },
             },
         });
+        //event function
+        $('#OffcanvasMenu').on('show.bs.offcanvas', function () {
+          $('body').addClass('show');
+        });
+      
+        $('#OffcanvasMenu').on('hide.bs.offcanvas', function () {
+          $('body').removeClass('show');
+        });
+
+        // Split text into spans
+        let typeSplit = new SplitType(".text-animation", {
+          types: "words, chars",
+          tagName: "span"
+        });
+
+        // Link timelines to scroll position
+        function createScrollTrigger(triggerElement, timeline) {
+          // Reset tl when scroll out of view past bottom of screen
+          ScrollTrigger.create({
+            trigger: triggerElement,
+            start: "top bottom",
+            onLeaveBack: () => {
+              timeline.progress(0);
+              timeline.pause();
+            }
+          });
+          // Play tl when scrolled into view (60% from top of screen)
+          ScrollTrigger.create({
+            trigger: triggerElement,
+            start: "top bottom",
+            onEnter: () => timeline.play()
+          });
+        }
+
+
+
+
+
+        $(".text-animation").each(function (index) {
+          let tl = gsap.timeline({ paused: true });
+          tl.from($(this).find(".char"), { yPercent: 100, duration: 0.5, ease: "power1.inOut", stagger: { amount: 0.8 } });
+          createScrollTrigger($(this), tl);
+        });
+
+        // Avoid flash of unstyled content
+        gsap.set(".text-animation", { opacity: 1 });
+          
+
         
 
+        console.clear();
 
+        gsap.registerPlugin(ScrollTrigger);
+        
+        const mediaWrap = document.querySelectorAll(".page-hero");
+        
+        mediaWrap.forEach((media, i) => {
+          const mediaImgs = media.querySelectorAll(".page-hero-bg");
+          mediaImgs.forEach((item) => {
+            const heightDiff = item.offsetHeight - item.parentElement.offsetHeight;
+            const parallaxComp = 140;
+        
+            gsap.to(item.parentElement, {
+              y: -heightDiff + parallaxComp,
+              scale: 1.1,
+              scrollTrigger: {
+                trigger: media,
+                start: `top  top`,
+                id: i + 1,
+                scrub: 1.5
+              }
+            });
+          });
+        });
 
 
 
@@ -74,50 +166,6 @@
 
 
 
- 
-
-
-
-
-window.addEventListener("DOMContentLoaded", (event) => {
-  // Split text into spans
-  let typeSplit = new SplitType(".text-animation", {
-    types: "words, chars",
-    tagName: "span"
-  });
-
-  // Link timelines to scroll position
-  function createScrollTrigger(triggerElement, timeline) {
-    // Reset tl when scroll out of view past bottom of screen
-    ScrollTrigger.create({
-      trigger: triggerElement,
-      start: "top bottom",
-      onLeaveBack: () => {
-        timeline.progress(0);
-        timeline.pause();
-      }
-    });
-    // Play tl when scrolled into view (60% from top of screen)
-    ScrollTrigger.create({
-      trigger: triggerElement,
-      start: "top 70%",
-      onEnter: () => timeline.play()
-    });
-  }
-
-
-
-
-
-  $(".text-animation").each(function (index) {
-    let tl = gsap.timeline({ paused: true });
-    tl.from($(this).find(".char"), { yPercent: 100, duration: 0.5, ease: "power1.inOut", stagger: { amount: 0.8 } });
-    createScrollTrigger($(this), tl);
-  });
-
-  // Avoid flash of unstyled content
-  gsap.set(".text-animation", { opacity: 1 });
-});
 
 
 

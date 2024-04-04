@@ -49,7 +49,7 @@
 							<nav class="right-site-nav">
 								<ul class="offcanvas-nav list-unstyled mb-0">
 									<li class="nav-item">
-										<a class="nav-link active d-inline position-relative" href="#">
+										<a class="nav-link d-inline position-relative" href="#">
 											Services
 											<svg class="icon-toogle show pluse-icon show" xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
 												<line x1="13.6357" y1="0.5" x2="13.6357" y2="24.9731" stroke="#585858"/>
@@ -89,7 +89,7 @@
 								</ul>
 								<ul class="offcanvas-nav list-unstyled mb-0">
 									<li class="nav-item">
-										<a class="nav-link active d-inline position-relative" href="#">
+										<a class="nav-link  d-inline position-relative" href="#">
 											Services
 											<svg class="icon-toogle show pluse-icon show" xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
 												<line x1="13.6357" y1="0.5" x2="13.6357" y2="24.9731" stroke="#585858"/>
@@ -172,7 +172,7 @@
 									<div class="col">
 										<div class="banner-caption mb-p text-center mx-auto">
 											<h1  class="main-title text-animation">
-												<span>Envision.</span> <span>Elevate.</span> <span>Empower.</span>
+												<span class="active">Envision.</span> <span>Elevate.</span> <span>Empower.</span>
 											</h1>
 											<div class="mb-p text-animation"><p>LETEL transforms the intangible into the unforgettable through turnkey services, including civil engineering, drone technology, LiDAR, construction services, and more. We envision. We elevate. We empower.</p></div>
 										</div>
@@ -182,17 +182,22 @@
 							<div class="read-more-wrapper position-absolute">
 								<a href="#" class="read-more-btn text-animation fw-bold  d-flex flex-column align-items-center justify-content-center"><span>Read More</span><img class="down-arrow" src="assets/images/svg-icon/downArrow.svg" alt="down-arrow"></a>
 							</div>
-							<div class="video-info position-absolute start-0 top-0 h-100 w-100">
-								<div class="inner-video position-relative z-1">
-									<video src="assets/videos/banner-video.mp4" loop autoplay muted class="video-area w-100"></video>
+							<div class="video-info position-absolute   start-0 top-0 h-100 w-100">
+								<div class="inner-video position-relative z-1 page-hero">
+									<video src="assets/videos/banner-video.mp4" loop autoplay muted class="video-area w-100 page-hero-bg"></video>
 								</div>
 							</div>
 						</section>
 						<!-- banner section end -->
 						<!-- our services start-->
-						<section class="our-service-section overflow-hidden">
-							<div class="service-img-wrapper overlay bg-fix position-relative z-1 d-flex align-items-end justify-content-center">
-								<div class="container">
+						<section class="our-service-section overflow-hidden page-hero">
+							<div class="service-img-wrapper overlay position-relative z-1 d-flex align-items-end justify-content-center overflow-hidden">
+								<div class="service-img-bg position-absolute top-0 start-0 h-100 w-100 overflow-hidden">
+									<div class="inner-service-img bg-fix  page-hero-bg">
+
+									</div>
+								</div>
+								<div class="container position-relative z-3">
 									<div class="row">
 										<div class="col-lg-11">
 											<div class="section-title-wrapper mb-p">
@@ -370,8 +375,11 @@
 						<!-- market section end -->
 						<!-- about us section start -->
 						<section class="about-us-section">
-							<div class="popup-section overlay position-relative z-1">
-								<img src="assets/images/about-us/popup-bg.jpg" alt="popup-img">
+							<div class="popup-section overlay position-relative z-1 overflow-hidden">
+								<div class="popup-inner-img page-hero">
+									<img src="assets/images/about-us/popup-bg.jpg" alt="popup-img" class="page-hero-bg">
+								</div>
+								
 								<a class="popup-btn position-absolute d-flex align-items-center justify-content-center" href="https://www.youtube.com/watch?v=a3ICNMQW7Ok">
 									<div class="inner-play-btn position-relative z-1 d-flex align-items-center justify-content-center">
 										<img src="assets/images/svg-icon/play-icon.svg" alt="paly-icon">
@@ -381,7 +389,7 @@
 									<img class="char" src="assets/images/svg-icon/about-logo.svg" alt="about-logo">
 								</div>
 							</div>
-							<div class="about-content-wrapper">
+							<div class="about-content-wrapper page-hero">
 								<div class="container">
 									<div class="section-title-wrapper text-center mb-p">
 										<h2 class="text-white text-animation">About us</h2>
@@ -390,7 +398,9 @@
 										</div>
 									</div>
 									<div class="about-img-wrapper overflow-hidden">
-										<img src="assets/images/about-us/about-img.jpg" alt="about-img" class="w-100">
+										<div class="about-inner overflow-hidden">
+											<img src="assets/images/about-us/about-img.jpg" alt="about-img" class="w-100 page-hero-bg">
+										</div>
 									</div>
 								</div>
 							</div>
@@ -487,9 +497,14 @@
 						</section>
 						<!-- featured section end -->
 						<!-- cta section start -->
-						<section class="cta-section bg-fix position-relative z-1 d-flex align-items-center justify-content-center">
-							<div class="cta-img position-absolute start-0 bottom-0">
-								<img src="assets/images/cta/frame.png" alt="frame-img" class="w-100">
+						<section class="cta-section overflow-hidden  page-hero position-relative z-1 d-flex align-items-center justify-content-center">
+							<div class="cta-bg-img position-absolute top-0 start-0 h-100 w-100">
+								<div class="cta-inner-bg bg-fix page-hero-bg">
+
+								</div>
+							</div>
+							<div class="cta-img position-absolute start-0 bottom-0 ">
+								<img src="assets/images/cta/frame.png" alt="frame-img" class="w-100 page-hero-bg">
 							</div>
 							<div class="container position-relative z-3">
 								<div class="cta-content-wrapper text-center">
@@ -568,26 +583,26 @@
 													<div class="footer-nav-info">
 														<h6 class="tk-aktiv-grotesk pb-1 fw-medium text-animation">SERVICES</h6>
 														<ul class="list-unstyled mb-0">
+															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">Civil Engineering</a></li>
+															<li><a href="#" class="footer-link d-block text-white fw-medium  mb-2 pb-1 text-animation">LIDAR Services</a></li>
+															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">Drone Services</a></li>
+															<li><a href="#" class="footer-link d-block text-white fw-medium  mb-2 pb-1 text-animation">Surveying Services</a></li>
 															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">GIS Mapping & Inspections</a></li>
-															<li><a href="#" class="footer-link d-block text-white fw-medium  mb-2 pb-1 text-animation">GIS Mapping & Inspections</a></li>
-															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">GIS Mapping & Inspections</a></li>
-															<li><a href="#" class="footer-link d-block text-white fw-medium  mb-2 pb-1 text-animation">GIS Mapping & Inspections</a></li>
-															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">GIS Mapping & Inspections</a></li>
-															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">GIS Mapping & Inspections</a></li>
+															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">Digital Terrain Models</a></li>
 														</ul>
 													</div>
 												</div>
 												<div class="col-lg-6 col-md-6 col-sm-6">
 													<div class="footer-nav-info">
-														<h6 class="tk-aktiv-grotesk pb-1 fw-medium text-animation">SERVICES</h6>
+														<h6 class="tk-aktiv-grotesk pb-1 fw-medium text-animation">MARKETS</h6>
 														<ul class="list-unstyled mb-0">
-															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">GIS Mapping & Inspections</a></li>
-															<li><a href="#" class="footer-link d-block text-white fw-medium  mb-2 pb-1 text-animation">GIS Mapping & Inspections</a></li>
-															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">GIS Mapping & Inspections</a></li>
-															<li><a href="#" class="footer-link d-block text-white fw-medium  mb-2 pb-1 text-animation">GIS Mapping & Inspections</a></li>
-															<li><a href="#" class="footer-link d-block text-white fw-medium  mb-2 pb-1 text-animation">GIS Mapping & Inspections</a></li>
-															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation  mb-2 pb-1">GIS Mapping & Inspections</a></li>
-															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">GIS Mapping & Inspections</a></li>
+															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">Transportation</a></li>
+															<li><a href="#" class="footer-link d-block text-white fw-medium  mb-2 pb-1 text-animation">Government</a></li>
+															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">National Developers</a></li>
+															<li><a href="#" class="footer-link d-block text-white fw-medium  mb-2 pb-1 text-animation">Utilities</a></li>
+															<li><a href="#" class="footer-link d-block text-white fw-medium  mb-2 pb-1 text-animation">Construction</a></li>
+															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation  mb-2 pb-1">Commercial Development</a></li>
+															<li><a href="#" class="footer-link d-block text-white fw-medium  text-animation mb-2 pb-1">Energy</a></li>
 														</ul>
 													</div>
 												</div>
@@ -605,7 +620,7 @@
 								<div class="copy-right-inner fw-normal text-center">
 									<div class="row align-items-center justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-center justify-content-center">
 										<div class="col-lg-4 col-md-6">
-											<div class="copy-right-text mb-p">
+											<div class="copy-right-text mb-p text-animation">
 												<p>&copy; 2024 Letel. All rights reserved.</p>
 											</div>
 										</div>
