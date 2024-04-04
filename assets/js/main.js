@@ -34,7 +34,8 @@
 
         $(".nav-link").click(function(){
             $(this).parent().find(".sub-menu-wrapper").slideToggle();
-            $(this).parent().find('.icon-toogle').toggleClass('show hide');   
+            $(this).parent().find('.icon-toogle').toggleClass('show hide');
+            $(this).toggleClass('active')   
 
           });
         

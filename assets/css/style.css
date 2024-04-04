@@ -271,35 +271,48 @@ body {
   font-family: "freight-text-pro", serif;
   color: #FFFFFF;
   transition: 0.3s linear;
-  border-bottom: 1px solid transparent;
   }
  
   .nav-link:focus, .nav-link:hover {
     color:#FFFFFF;
 }
-  .nav-link.active {
-  color: #E2E729 !important;
-  }
+ 
   .nav-link.change-color{
     color: #585858;
+  }
+
+  .nav-link:hover{
+    border-bottom: 2px solid #E2E729;
+    color: #E2E729;
+  }
+  .offcanvas-nav > .nav-item > .nav-link {
+  font-size: 100px;
+  }
+  .offcanvas-nav > .nav-item > .nav-link.active{
+    color: #E2E729;
+  }
+  .offcanvas-nav > .nav-item > .nav-link.active svg line{
+    stroke: #E2E729;
+  }
+
+  .offcanvas-nav > .nav-item > .nav-link:hover {
+  color: #E2E729;
+  border-bottom: 0 !important;
+  }
+  .offcanvas-nav > .nav-item> .nav-link:hover svg line {
+   stroke: #E2E729;
   }
   .nav-link.change-color svg line{
     stroke: #585858;
   }
-  
-  .offcanvas-nav>li>a {
-  font-size: 100px;
+ 
+  .offcanvas-nav  .sub-menu-inner  .nav-link.change-color {
+    color: #fff ;
   }
-  /* .offcanvas-nav>li>a:hover {
-  color: #FFFFFF;
-  } */
-  .offcanvas-nav>li>a svg line {
-  transition: 0.3s linear;
+  .offcanvas-nav  .sub-menu-inner  .nav-link.change-color:hover {
+    color: #E2E729 ;
   }
-  /* .offcanvas-nav>li>a:hover .pluse-icon line {
-  stroke: #FFFFFF;
-  } */
-  .sub-menu-inner {
+   .sub-menu-inner {
   margin-right: 41px;
   }
  
