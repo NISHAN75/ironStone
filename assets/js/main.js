@@ -111,7 +111,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   $(".text-animation").each(function (index) {
     let tl = gsap.timeline({ paused: true });
-    tl.from($(this).find(".char"), { yPercent: 100, duration: 0.3, ease: "power1.inOut", stagger: { amount: 0.6 } });
+    tl.from($(this).find(".char"), { yPercent: 100, duration: 0.5, ease: "power1.inOut", stagger: { amount: 0.8 } });
     createScrollTrigger($(this), tl);
   });
 
