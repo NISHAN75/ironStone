@@ -11,305 +11,840 @@ Version: 1.0
 1.default css
 2.header section css
 3.banner section css
-4.service section css
-5.market section  css
-6.about us section css
-7.featured section css
-8.cta section css
-9.footer section css
+
 -----------------------------------
 /* min-width 1430 */
 @media (min-width: 1430px) {}
 
 /* max-width 1399 */
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+	
+}
+@media (max-width: 1255px) {
+	/* ================ content block section start =================== */
+	.team-member-img .left-content-icon,
+	.left-content-icon {
+		left: 0;
+	}
+	.left-content-icon.content-icon-2 {
+		transform: translate(100% , -50%);
+		left: 87px;
+	}
+	.team-member-img .right-content-icon,
+	.right-content-icon {
+		right: 0;
+	}
+	.right-content-icon.content-icon-2 {
+		transform: translate(0% , -50%);
+		right: 100px;
+	}
+	.team-member-img .left-content-icon.content-icon-2 {
+		left: -34px;
+	}
+	/* ================ content block  section end =================== */
+}
 
 /* max-width 1199 */
 @media (max-width: 1199.98px) {
+	.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+		padding-right: 25px;
+		padding-left: 25px;
 
-	/* offcanvas section css start */
-	.header-ofcanvas::before {
-		display: none;
 	}
-
-	/* offcanvas section css end */
-
-	/* header section css start */
-
-	.right-site-nav {
-		padding-left: 0;
+	/* ================ header section start =================== */
+	.menu-wrapper {
+		gap: 15px;
 	}
-
-	.left-site-nav {
-		padding-left: 0px;
+	.logo-info img {
+		max-width: 150px;
 	}
+	.main-menu li a {
+		font-size: 16px;
+	}
+	.main-menu li {
+		display: inline;
+		margin-right: 12px;
+	}
+	/* ================ header section end =================== */
 
-	/* header section css end */
-
-	/* footer section start */
-	.footer-nav-wrapper .row {
+	/* ================ card section start =================== */
+	.card-area .row {
 		--bs-gutter-x: 24px;
 	}
+	.card-content {
+		padding: 30px 15px;
+	}
+	/* ================ card section end =================== */
 
-	/* footer section end */
+	/* ================ content block section start =================== */
+	.content-block-area .row {
+		--bs-gutter-x: 70px;
+	}
+	/* ================ content block section end =================== */
+
+	/* ================ business section start =================== */
+	.business-ownder-img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: calc(50% - 30px);
+		background-position: top center;
+	}
+	/* ================ business section end =================== */
+
+	/* ================ cta section end =================== */
+	.cta-area .row {
+		--bs-gutter-x: 60px;
+	}
+	/* ================ cta section end =================== */
+
+	/* ================ take action section start  =================== */
+	.take-bg {
+		width: calc(50% - 15px);
+	}
+	.take-action-content {
+		max-width: 484px;
+	}
+	/* ================ take action section end  =================== */
+
+	/* ================ next team member section start  =================== */
+	.next-team-member .container > .row {
+		--bs-gutter-y: 40px;
+	}
+	/* ================ next team member section start  =================== */
+
+	/* ================ blog section start  =================== */
+	.blog-area .row {
+		--bs-gutter-x: 24px;
+		--bs-gutter-y: 30px;
+	}
+	.blog-content-info {
+		padding: 15px;
+	}
+	/* ================ blog section end  =================== */
+
+	/* ================ blog section end  =================== */
+	.article-details-img-wrapper-inner {
+		max-width: 453px;
+	}
+	/* ================ blog section end  =================== */
+
+
+
+
 }
 
 /* max-width 1399 - min-width 992*/
-@media (max-width: 1199.98px) and (min-width: 992px) {}
+@media (max-width: 1199.98px) and (min-width: 992px) {
+}
 
 /* max-width 991 */
 @media (max-width: 991.98px) {
-	h1 {
-		font-size: 78px;
+	h1{
+		font-size: 48px;
+	}
+	h2{
+		font-size: 40px;
+	}
+	h3{
+		font-size: 36px;
+	}
+	h4{
+		font-size: 28px;
+	}
+	h5{
+		font-size: 24px;
+	}
+	h6{
+		font-size: 20px;
+	}
+	body {
+		font-size: 16px;
 	}
 
-	h2 {
-		font-size: 52px;
+
+	/* all button */
+	.boxed-btn {
+		font-size: 16px;
+		padding: 10.5px 30.3px;
 	}
-
-  /* offcanvas menu css start*/
-  .offcanvas-body {
-    padding: 0px;
-   }
-  /* offcanvas menu css  end */
-
-  /* market section css start */
-  .market-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-  /* market section css end */
-
-	/* about us section css start */
-	.popup-btn {
-		height: 140px;
-		width: 140px;
-		border-radius: 140px;
+	.video-btn {
+		font-size: 16px;
 	}
+	/* all button */
 
-	.inner-play-btn {
-		height: 100px;
-		width: 100px;
-		border-radius: 100px;
+	/* all padding fix */
+	.content-block-area.speking-content-block ,
+	.team-area ,
+	.icon-wrapper-area ,
+	.content-block-area ,
+	.mastery-area ,
+	.blog-area ,
+	.fundamental-area {
+		padding: 70px 0px;
 	}
+	/* all padding fix */
+	/* swiper  */
+	.swiper-pagination {
+		margin-top: 15px;
+	}
+	/* swiper */
+	/* ================ header section start =================== */
+	.header-area {
+		padding: 10px 0;
+	}
+	
+	/* ================ header section end =================== */
+	/* ================ banner section start =================== */
+	.article-banner-content h1 ,
+	.banner-content h1 {
+		font-size: 48px;
+	}
+	/* all font size 18 */
+	.font-size-22 p ,
+	.sub-title ,
+	.banner-content blockquote, 
+	.banner-content p ,
+	.signature-content .list-wrapper li ,
+	.testimonial-wrapper.about-testimonial blockquote ,
+	.engagement-wrapper h6 ,
+	.challenges-content-info h6 ,
+	.content-block-area.about-content-block .content-block-inner-info h6 ,
+	.banner-content.home-page-content p ,
+	.banner-content p {
+		font-size: 18px;
+	}
+	/* all font size 18 */
 
-	.about-logo {
+	.speking-contnet .banner-button-wrapper ,
+	.banner-button-wrapper {
+		gap: 15px;
+	}
+	.banner-area ,
+	.banner-area.single-banner {
+		min-height: 500px;
+		padding: 100px 0 70px;
+	}
+	/* ================ banner section end =================== */
+
+	/* ================ card section start =================== */
+	.card-area .row {
+		--bs-gutter-y: 30px;
+	}
+	.card-content {
+		padding: 40px 25px;
+	}
+	.card-content p {
+		font-size: 16px;
+	}
+	/* ================ card section end =================== */
+	/* ================ testimonial section end =================== */
+	.testimonial-area .testimonial-wrapper {
+		padding: 40px 65px 38px;
+	}
+	.testimonial-area .section-title {
+		margin-bottom: 20px;
+	}
+	.test-svg-logo-1{
+		right: 20px;
+		top: 20px;
+	}
+	.test-svg-logo-3 {
+		left: 20px;
 		bottom: 20px;
 	}
-
-	.inner-play-btn img {
-		height: 45px;
-		width: 45px;
+	/* ================ testimonial section end =================== */
+	/* ================ business section start =================== */
+	.business-ownder-img {
+		width: 100%;
+		height: 1000px;
+		position: relative;
 	}
+	.business-ownder-content.signature-content ,
+	.business-ownder-content {
+		padding: 30px 0;
+	}
+	.business-ownder-content.signature-content .section-title {
+		margin-bottom: 15px;
+	}
+	.business-ownder-info p {
+		font-size: 15px;
+		margin-bottom: 14px;
+	}
+	.business-svg-img {
+		left: auto;
+		transform: translateX(0%);
+		margin-left: 0;
+		right: 30px;
+		bottom: 30px;
+	}
+	.bussines-btn-wrappre {
+		gap: 15px;
+		margin-top: 25px;
+	}
+	.challenges-content-info h6 {
+		letter-spacing: 2px;
+		margin-bottom: 8px;
+		line-height: 1.5;
+	}
+	.challenges-content-info {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.banner-area.single-banner.about-banner-area {
+		min-height: 350px;
+	}
+	/* ================ business section end =================== */
 
-	/* about us section css end */
+	/* ================ grip section start =================== */
+	.grip-bg {
+		height: 500px;
+		width: 100%;
+		position: static;
+	}
+	.grip-area-content {
+		max-width: 450px;
+		padding: 30px 0;
+	}
+	/* ================ grip section end =================== */
 
+	/* ================ tp brand section start =================== */
+	.tp-brand-title.text-center {
+		margin-bottom: 25px;
+	}
+	.tp-brand-area {
+		margin-bottom: 25px;
+	}
+	.tp-brand-wrapper-area.about-slider ,
+	.tp-brand-wrapper-area.speaking-brand-slider {
+		padding: 30px 0;
+	}
+	/* ================ tp brand section end =================== */
+	/* ================ fundamental section start  =================== */
+	.fundamental-area .row {
+		--bs-gutter-y: 30px;
+	}
+	.fundamental-area .section-title h2 {
+		line-height: 1.5;
+	}
+	/* ================ fundamental section end  =================== */
 
+	/* ================ mastery section start =================== */
+	.study-wrapper,
+	.mastery-slider-wrapper.speaking-wrapper ,
+	.mastery-content-wrapper {
+		max-width: 100%;
+	}
+	.mastery-wrapper {
+		margin-top: 30px;
+	}
+	.mastery-slider-wrapper h4 {
+		padding-bottom: 15px;
+		margin-bottom: 12px;
+	}
+	.mastery-wrapper .row {
+		--bs-gutter-y: 30px;
+	}
+	/* ================ mastery section end =================== */
+	/* ================ cta section end =================== */
+	.cta-area .row {
+		--bs-gutter-y: 30px;
+	}
+	.cta-content-wrapper .boxed-btn {
+		margin-top: 10px;
+	}
+	/* ================ cta section end =================== */
 
-	/* featured section start */
-	.featured-card-wrapper {
+	/* ================ content block section start =================== */
+	.content-block-area .row {
+		--bs-gutter-x: 24px;
+		--bs-gutter-y: 30px;
+	}
+	.left-content-icon {
+		top: 20px;
+		left: 20px;
+	}
+	.content-block-inner-info br ,
+	.right-content-icon.content-icon-2 ,
+	.left-content-icon.content-icon-2{
+		display: none;
+	}
+	.right-content-icon {
+		top: 20px;
+		right: 20px;
+	}
+	.content-block-wrapper-info {
+		padding-top: 0;
+	}
+	.content-block-inner-info {
+		margin-bottom: 10px;
+	}
+	.content-block-area.about-content-block .content-block-inner-info {
+		margin-bottom: 15px;
+	}
+	.assessment-suite-area.content-block-area .row.flex-row-reverse,
+	.content-block-area .row.flex-row-reverse {
+		margin-top: 0px;
+	}
+	.assessment-suite-area .content-block-wrapper ,
+	.partner-content-wrappar  .content-block-wrapper{
+		max-width: 100%;
+	}
+	.assessment-suite-area .container .row:last-child {
+		margin-top: 0;
+	}
+	/* ================ content block section end =================== */
+
+	/* ================ engagement section start =================== */
+	.engagement-area.testimonial-area .row {
+		--bs-gutter-y: 30px;
+	}
+	.engagement-area.testimonial-area .sub-title {
 		margin-bottom: 30px;
 	}
-
-	/* featured section end */
-
-	/* footer area section css start */
-	.bottom-footer-area {
-		padding-top: 50px;
+	.engagement-wrapper blockquote {
+		font-size: 20px;
 	}
-
-	.bottom-footer-img {
+	.engagement-wrapper h6 {
+		margin-top: 10px;
+	}
+	.engagement-wrapper {
+		padding: 30px 25px;
+	}
+	
+	/* ================ engagement section end =================== */
+	/* ================ take action section end  =================== */
+	.take-bg {
+		position: static;
+		height: 500px;
+		width: 100%;
 		margin-bottom: 30px;
 	}
+	.take-action-content {
+		max-width:100%;
+	}
+	.take-action-area{
+		padding-top: 0;
+		padding-bottom: 50px;
+	}
+	/* ================ take action section end  =================== */
 
-	/* footer area section css end */
+	/* ================ team section start  =================== */
+	.team-area{
+		margin-top: 70px;
+	}
+	.team-area .row {
+		--bs-gutter-y: 40px;
+	}
+	.team-area::before {
+		height: 100%;
+	}
+	.team-img {
+		margin-bottom: 25px;
+	}
+	/* ================ team section end  =================== */
+	/* ================ team member section start  =================== */
+	.team-member-img {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.team-member-area .row {
+		--bs-gutter-y: 30px;
+	}
+	.team-member-content {
+		max-width: 100%;
+	}
+	.member-des {
+		font-size: 20px;
+	}
+	.team-member-details-inner-info p {
+		margin-bottom: 15px;
+	}
+	.team-member-details-info {
+		margin-bottom: 25px;
+	}
+	/* ================ team member section end  =================== */
+
+	/* ================ next team member section start  =================== */
+	.next-team-member .team-content span {
+		margin-bottom: 10px;
+	}
+	/* ================ next team member section end  =================== */
+
+	/* ================ blog section start  =================== */
+	.date {
+		margin-bottom: 8px;
+	}
+	.blog-btn-wrapper {
+		margin-top: 30px;
+	}
+	/* ================ blog section end  =================== */
+
+	/* ================ single blog section start  =================== */
+	.article-big-img-wrapper img {
+		max-width: 100%;
+	}
+	.article-banner-content {
+		margin-top: 15px;
+	}
+	.article-banner-area {
+		padding: 30px 0;
+	}
+	.article-details-img-wrapper ,
+	.article-details-content {
+		padding: 30px 0;
+	}
+	.article-details-img-wrapper {
+		gap: 20px;
+	}
+	.article-details-content-info p {
+		margin-bottom: 16px;
+	}
+	.article-details-img-wrapper-inner {
+		max-width: 100%;
+	}
+	/* ================ single blog section end  =================== */
+
+	/* ================ next article section start  =================== */
+	.next-article {
+		padding: 30px 0;
+	}
+	.next-article-inner-info span {
+		font-size: 24px;
+	}
+	/* ================ next article section end  =================== */
+
+
+	
+
+	/* 991 end */
+
+	
+	
+	
 
 
 }
 
 /* max-width 767 */
 @media (max-width: 767.98px) {
-	h1 {
-		font-size: 68px;
+	h1{
+		font-size: 48px;
 	}
-
-	h2 {
-		font-size: 44px;
+	h2{
+		font-size: 40px;
 	}
-
-	h3 {
+	h3{
 		font-size: 36px;
 	}
-
-	h4 {
-		font-size: 28px;
+	h4{
+		font-size: 30px;
+	}
+	h5{
+		font-size: 22px;
+	}
+	/* all padding fix */
+	.team-area ,
+	.blog-area ,
+	.team-member-details-area ,
+	.content-block-area.speking-content-block ,
+	.content-block-area ,
+	.icon-wrapper-area ,
+	.mastery-area ,
+	.team-member-details-area ,
+	.fundamental-area {
+		padding: 50px 0px;
+	}
+	/* all padding fix */
+	/* ================ banner section start =================== */
+	.article-banner-content h1 ,
+	.banner-content h1 {
+		font-size: 40px;
 	}
 
-	h5 {
-		font-size: 20;
+	.banner-content blockquote, 
+	.banner-content p {
+		color: #fff;
+		font-weight: 300;
+		line-height: 1.2;
 	}
+	/* ================ banner section end =================== */
+	/* ================ business section start =================== */
+	.business-ownder-img {
+		height: 600px;
+	}
+	.sub-caption-wrapper span {
+		font-size: 16px;
+	}
+	/* ================ business section end =================== */
 
-	h6 {
+	/* ================ business section end =================== */
+	.team-area{
+		margin-top: 50px;
+	}
+	/* ================ business section end =================== */
+
+	/* ================ footer section start =================== */
+	.top-footer-area {
+		padding: 30px 0;
+	}
+	/* ================ footer section end =================== */
+
+	/* ================ next team member section start  =================== */
+	.next-team-member .container > .row .row {
+		--bs-gutter-y: 15px;
+	}
+	/* ================ next team member section start  =================== */
+
+	/* ================ next article section start  =================== */
+	.next-article-inner-info span {
 		font-size: 18px;
 	}
-
-	/* banner section css start */
-	.banner-area-section {
-		min-height: 550px;
+	.next-article-inner-info {
+		gap: 8px;
 	}
-
-	.banner-caption h1 {
-		margin-bottom: 35px;
-	}
-
-	/* banner section css end */
-	/* header section css start */
-	.logo-area {
-		max-width: 150px;
-	}
-
-	/* header section css end*/
-	/* about us section css start */
-	.popup-btn {
-		height: 100px;
-		width: 100px;
-		border-radius: 100px;
-	}
-
-	.inner-play-btn {
-		height: 80px;
-		width: 80px;
-		border-radius: 80px;
-	}
-
-	.about-logo {
-		bottom: 20px;
-		width: 70px;
-	}
-
-	.inner-play-btn img {
-		height: 35px;
-		width: 35px;
-	}
-
-	/* about us section css end */
-
-	/* cta section start */
-	.cta-section {
-		min-height: 400px;
-	}
-
-	/* cta section end */
+	/* ================ next article section end  =================== */
 
 
-	/* footer section start */
-	.footer-nav-wrapper,
-	.other-link-wrapper {
-		margin-top: 17px;
-	}
 
-	/* footer section end */
+	
 }
 
 /* max-width 575 */
 @media (max-width: 575.98px) {
+	h1{
+		font-size: 40px;
+	}
+	h2{
+		font-size: 32px;
+	}
+	h3{
+		font-size: 30px;
+	}
 
-	/* header section css start */
-	/* offcanvas */
-	.sub-menu {
+
+	/* swiper */
+	.swiper-navigation-wrapper  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+	.swiper-navigation-wrapper  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+		margin: 0 var(--swiper-pagination-bullet-horizontal-gap,9px);
+	}
+	/* swiper */
+
+
+	/* ================ banner section start =================== */
+
+	.speking-contnet .banner-button-wrapper ,
+	.banner-button-wrapper {
+		margin-top: 15px;
+	}
+	.speking-contnet .banner-button-wrapper {
+		gap: 10px;
+	}
+	.business-ownder-img {
+		height: 450px;
+	}
+	.article-banner-content h1 ,
+	.banner-content h1 {
+		font-size: 36px;
+	}
+	/* ================ banner section end =================== */
+	/* ================ testimonial section end =================== */
+	.testimonial-wrapper blockquote {
+		font-size: 16px;
+	}
+	.author-wrapper {
+		gap: 15px;
 		flex-direction: column;
-    margin-bottom: 30px;
+	}
+	.author-wrapper span::before {
+		height: 2px;
+		width: 100%;
+		right: auto;
+		bottom: -50%;
+		top: auto;
+		left: 50%;
+		transform: translate(-50%, 50%);
+	}
+	.author-wrapper span {
+		font-size: 16px;
 	}
 
-	.sub-menu-inner {
-		margin-right: 0px;
+	.testimonial-area .testimonial-wrapper {
+		padding: 40px 60px 38px;
 	}
-
-	.nav-link {
-		font-size: 24px;
+	.test-svg-logo-1 ,
+	.test-svg-logo-2 ,
+	.test-svg-logo-3{
+		display: none;
 	}
+	/* ================ testimonial section end =================== */
 
-	/* header section css end */
-	/* about us section css start */
-
-	.about-logo {
-		bottom: 10px;
-		width: 50px;
+	/* ================ content block section start =================== */
+	.content-icon ,
+	.content-block-area .row.flex-row-reverse .content-icon-2 {
+		display: none;
 	}
+	
+	/* ================ content block section end =================== */
+	/* ================ take action section end  =================== */
+	.take-bg {
+		height: 350px;
+	}
+	/* ================ take action section end  =================== */
 
-	/* about us section css end */
 
+	
 
 }
 
 /* max-width 479 */
 @media (max-width: 479.98px) {
-	h1 {
-		font-size: 54px;
+
+	/* swiper */
+	.swiper-navigation-wrapper  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+	.swiper-navigation-wrapper  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+		margin: 0 var(--swiper-pagination-bullet-horizontal-gap,3px);
+	}
+	/* swiper */
+
+	/* ================ header section start =================== */
+	.logo-info img {
+		max-width: 100px;
+	}
+	/* ================ header section end =================== */
+	/* ================ banner section start =================== */
+	.banner-content h1 {
+		font-size: 34px;
+	}
+	.banner-area ,
+	.banner-area.single-banner {
+		min-height: 450px;
 	}
 
 
-	/* header section css start */
-	.logo-area {
-		max-width: 120px;
+	/* ================ banner section end =================== */
+
+	/* ================ content block section start =================== */
+	.right-content-icon,
+	.left-content-icon{
+		display: none;
+	}
+	/* ================ content block section end =================== */
+
+	/* ================ take action section start =================== */
+	.take-bg {
+		height: 250px;
+	}
+	/* ================ take action section end =================== */
+
+	/* ================ swiper section end =================== */
+	.swiper-navigation-wrapper .swiper-pagination-bullet {
+		width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px));
+		height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,12px));
+	}
+	.swiper-navigation-wrapper .swiper-pagination-bullet-active {
+		transform: translateY(0px);
+
+	}
+	/* ================ swiper section end =================== */
+
+	/* ================ testimonial section start =================== */
+	.quote {
+		max-width: 20px;
+	}
+	.testimonial-area .testimonial-wrapper {
+		padding: 40px 45px 38px;
+	}
+	/* ================ testimonial section end =================== */
+	
+
+	/* ================ team member section start  =================== */
+	.team-member-img {
+		max-width: 100%;
 	}
 
-	/* offcanvas  start */
-	.offcanvas-nav>li>a {
-		font-size: 70px;
+	/* ================ team member section end  =================== */
+
+	/* ================ single article section start  =================== */
+	.article-banner-content h1 {
+		font-size: 24px;
+		margin-bottom: 10px !important;
 	}
+	/* ================ single article section start  =================== */
 
-	.icon-toogle {
-		margin-top: 7px;
+	/* ================ next article section start  =================== */
+	.next-article-info {
+		justify-content: center !important;
+		gap: 20px;
 	}
-
-	.icon-toogle.show {
-		margin-top: 7px;
-	}
-
-	.offcanvas-nav.version-2 .nav-link {
-		font-size: 38px;
-	}
-
-	/* offcanvas  end */
-
-
-	/* header section css end*/
-	/* about us section css start */
-	.popup-btn {
-		height: 70px;
-		width: 70px;
-		border-radius: 70px;
-	}
-
-	.inner-play-btn {
-		height: 50px;
-		width: 50px;
-		border-radius: 50px;
-	}
-
-	.about-logo {
-		width: 30px;
-	}
-
-	.inner-play-btn img {
-		height: 20px;
-	}
-
-	/* about us section css end */
-
-
+	/* ================ next article section end  =================== */
+	
 }
 
 /* max-width 383 */
 @media (max-width: 383.98px) {
-
-	/* footer section css  start*/
-	.other-link-wrapper ul {
-		flex-direction: column;
-		gap: 5px !important;
+	/* ================ header section start =================== */
+	.menu-wrapper {
+		gap: 5px;
 	}
+	.logo-info img {
+		max-width: 80px;
+	}
+	/* ================ header section end =================== */
+	/* ================ banner section start =================== */
+	.banner-content h1 {
+		font-size: 24px;
+	}
+	.banner-content.home-page-content p ,
+	.banner-content p {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	.video-btn {
+		font-size: 16px;
+		gap: 5px;
+	}
+	.banner-button-wrapper {
+		gap: 10px;
+	}
+	.video-icon {
+		height: 40px;
+		width: 40px;
+	}
+	.video-icon svg{
+		height: 12px;
+		width: 12px;
+	}
+	/* ================ banner section end =================== */
+	/* ================ business section start =================== */
+	.sub-caption-wrapper span {
+		font-size: 14px;
+	}
+	/* ================ business section end =================== */
 
-	/* footer section end  */
+	/* ================ testimonial section start =================== */
+	.testimonial-area .testimonial-wrapper {
+		padding: 40px 30px 38px;
+	}
+	.quote-1 {
+		left: 0;
+		top: 0;
+	}
+	.quote-2 {
+		bottom: -9px;
+		right: 0;
+	}
+	/* ================ testimonial section end =================== */
+
+
+	/* ================ next team member section start  =================== */
+	.next-team-member h2 {
+		font-size: 28px;
+	}
+	/* ================ next team member section end  =================== */
+
 
 }
+
+
